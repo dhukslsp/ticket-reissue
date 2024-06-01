@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Assistant</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="http://localhost:3000/myFile/mainFile.js"></script>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
     <div class="w-[32rem] h-[36rem] border rounded-lg shadow-lg">
@@ -14,8 +15,9 @@
         <div class="h-[28rem] bg-gray-200 flex items-center justify-center">
             <!-- Content goes here -->
         </div>
-        <div class="border-t">
-            <input type="text" placeholder="Ask your query" name="Ask your query" class="w-full p-4 text-gray-600 text-lg rounded-b-lg">
+        <div class="border-t flex">
+            <input type="text" id = "maintag" placeholder="Ask your query" name="Ask your query" class="inline p-4 text-gray-600 text-lg rounded-b-lg" style = "width:85%">
+            <button type="submit" class="inline p-4 bg-blue-500 text-white text-lg rounded-b-lg" onclick="handleMessage()">Submit</button>
         </div>
     </div>
 </body>
